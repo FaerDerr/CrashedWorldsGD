@@ -1,6 +1,5 @@
 extends Node3D
 
-<<<<<<< Updated upstream
 enum Block {
 	Grass = 0,
 	Dirt,
@@ -75,20 +74,6 @@ func random_terrain():
 	var endtime = Time.get_ticks_msec() - starttime
 	print("Placed " + str(count) + " blocs in " + str(endtime) + "ms")
 	
-=======
-@onready var itemdrop = preload("res://Entities/ItemDrop/ItemDrop.tscn")
-
-#func _input(event):
-#	if event.is_action_pressed("ui_accept"):
-#		$Wolf/SubViewport/Node2D.calculate_hue()
-#		random_terrain()
-
-func _ready():
-	$GridMap.random_terrain()
-	UseEffect.connect("destroyGrid", destroyGrid)
-	UseEffect.connect("placeGrid", placeGrid)
-	#$CharacterBody3D.position = Vector3i(100,20,100)
->>>>>>> Stashed changes
 	
 func destroyGrid(pos: Vector3i):
 	print(pos)

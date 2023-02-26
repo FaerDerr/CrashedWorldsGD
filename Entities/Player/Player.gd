@@ -1,18 +1,9 @@
 extends CharacterBody3D
 
-<<<<<<< Updated upstream
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
 signal destroyGrid
-=======
-class_name Player
-
-const SPEED = 6.0
-const JUMP_VELOCITY = 4.5
-
-signal useItem
->>>>>>> Stashed changes
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
